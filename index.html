@@ -12,9 +12,12 @@
   </head>
   <body>
     <header id="home">
-      <div id="home" class="navbar">
+      <div class="navbar">
         <div class="logo">Devangam Harathi</div>
-        <ul class="nav-links">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -42,7 +45,6 @@
           <a href="https://github.com/HARATHI2003"
             ><i class="fab fa-github"></i
           ></a>
-
           <a href="https://www.linkedin.com/in/devangam-harathi-0b5388284/"
             ><i class="fab fa-linkedin-in"></i
           ></a>
@@ -53,13 +55,14 @@
         <a href="Devangam-harathi-resume.pdf" class="cv-button">View CV</a>
       </div>
     </section>
+
     <section id="project" class="projects-section">
       <h2>Featured Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <img
             src="https://m.media-amazon.com/images/I/814dHBbZxBL.png"
-            alt="Food Delivery App"
+            alt="Car Game"
           />
           <div class="project-info">
             <h3>ALTS-Car Game</h3>
@@ -72,7 +75,7 @@
         </div>
 
         <div class="project-card">
-          <img src="flight.jpg" alt="Weather Application" />
+          <img src="flight delay piture.jpg" alt="Flight Prediction" />
           <div class="project-info">
             <h3>Flight Delay Prediction</h3>
             <p>
@@ -84,7 +87,7 @@
         </div>
 
         <div class="project-card">
-          <img src="carvault.jpg" alt="E-commerce Website" />
+          <img src="carvault.jpg" alt="Car Vault" />
           <div class="project-info">
             <h3>Car-Vault App</h3>
             <p>
@@ -96,7 +99,7 @@
         </div>
       </div>
     </section>
-    <!-- TECHNICAL SKILLS SECTION -->
+
     <section id="skills" class="skills-section">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
@@ -120,7 +123,6 @@
           <h3>Python</h3>
           <p>Fundamentals</p>
         </div>
-
         <div class="skill-card">
           <i class="fas fa-brain"></i>
           <h3>DSA</h3>
@@ -128,10 +130,18 @@
         </div>
       </div>
     </section>
-    <!-- FOOTER -->
+
     <footer id="contact" class="footer">
       <p>&copy; 2025 Devangam Harathi. All rights reserved.</p>
       <p>91+ 7601005061</p>
     </footer>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav-links");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
