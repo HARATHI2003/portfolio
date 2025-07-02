@@ -390,3 +390,17 @@ html {
     border-radius: 6px;
   }
 }
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* creates clean space between icons */
+  margin-top: 10px;
+}
+
+.social-icon a {
+  font-size: 28px;
+  color: orange; /* match your footer theme */
+  text-decoration: none;
+}
+
